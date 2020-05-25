@@ -1,0 +1,3084 @@
+#page-container {
+    max-width: 66em;
+    margin: 0 auto;
+}
+
+.all-presets-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.presets-container {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.preset-container {
+    padding: 1em;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+@media (max-width: 375px) {
+    .preset-container {
+        padding: 1em 0;
+    }
+}
+/*** Background Gradient Animation ***/
+@keyframes kote-gradient {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+/*** Pulse Animation ***/
+@keyframes kote-pulse {
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(106, 59, 206, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 0.625em rgba(106, 59, 206, 0);
+    }
+}
+
+/*** Scale Animation ***/
+@keyframes kote-scale {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+/*** Jump Animation ***/
+@keyframes kote-jump {
+    0%,
+    100% {
+        transform: translate3d(0, 1%, 0) scale3d(1, 1.1, 1);
+    }
+
+    40% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
+}
+
+/*** Shine Animation ***/
+@keyframes kote-shine {
+    0%,
+    100% {
+        box-shadow: 0 0 0 rgba(101, 81, 123, 0);
+    }
+
+    50% {
+        box-shadow: 0 0 2em #65517b;
+    }
+}
+
+/*** Preset 1 Begin ***/
+.kote-prices-table-1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #2f2f2f;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.kote-prices-table-1 .prices-table__left-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 16em;
+    min-width: 16em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-1 .prices-table__left-column {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__price b {
+    color: #fe5c55;
+    font-size: 3.125em;
+    font-weight: 600;
+
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: bold;
+    color: #fe5c55;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fe5c55;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 11em;
+    text-decoration: none;
+    color: #fff;
+    background: #fe5c55;
+    border-radius: 2em;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-1 .prices-table__left-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-1 .prices-table__center-column {
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 16em;
+    min-width: 16em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #fe5c55 0, #f09719 100%);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-bottom: 2.0625em;
+    padding-top: 3.5625em;
+    color: #fff;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-1 .prices-table__center-column {
+        border-radius: 0;
+    }
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__price b {
+    font-size: 3.125em;
+    font-weight: 600;
+
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight:bold;
+    color:white;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #fff;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width:11em;
+    text-decoration: none;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 2em;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-1 .prices-table__center-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-1 .prices-table__right-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 16em;
+    min-width: 16em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-1 .prices-table__right-column {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__price b {
+    color: #fe5c55;
+    font-size: 3.125em;
+    font-weight: 600;
+
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: bold;
+    color: #fe5c55;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fe5c55;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 11em;
+    text-decoration: none;
+    color: #fff;
+    background: #fe5c55;
+    border-radius: 2em;
+    text-transform: none;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-1 .prices-table__right-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+/*** Preset 1 End ***/
+/*** Preset 2 Begin ***/
+.kote-prices-table-2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #2f2f2f;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.kote-prices-table-2 .prices-table__left-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-2 .prices-table__left-column {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__price b {
+    color: #2871c5;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #2871c5;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #2871c5;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-2 .prices-table__left-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-2 .prices-table__center-column {
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #2871c5 0, #3cc1e3 100%);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-bottom: 2.0625em;
+    padding-top: 3.5625em;
+    color: #fff;
+    background: linear-gradient(-45deg, #2168bb 0, #44bedd 100%);
+    background-size: 400% 400%;
+    animation: kote-gradient 2s ease infinite;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-2 .prices-table__center-column {
+        border-radius: 0;
+    }
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__price b {
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #fff;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-2 .prices-table__center-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-2 .prices-table__right-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-2 .prices-table__right-column {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__price b {
+    color: #2871c5;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #2871c5;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #2871c5;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-2 .prices-table__right-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+/*** Preset 2 End ***/
+/*** Preset 3 Begin ***/
+.kote-prices-table-3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #2f2f2f;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.kote-prices-table-3 .prices-table__left-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-3 .prices-table__left-column {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__price b {
+    color: #683ace;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #683ace;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #683ace;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-3 .prices-table__left-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-3 .prices-table__center-column {
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #683ace 0, #d760f9 100%);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-bottom: 2.0625em;
+    padding-top: 3.5625em;
+    color: #fff;
+    box-shadow: 0 0 0 #6a3bce;
+    animation: kote-pulse 2s infinite;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-3 .prices-table__center-column {
+        border-radius: 0;
+    }
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__price b {
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #fff;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-3 .prices-table__center-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-3 .prices-table__right-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-3 .prices-table__right-column {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__price b {
+    color: #683ace;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #683ace;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #683ace;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-3 .prices-table__right-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+/*** Preset 3 End ***/
+/*** Preset 4 Begin ***/
+.kote-prices-table-4 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #2f2f2f;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-4 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.kote-prices-table-4 .prices-table__left-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-4 .prices-table__left-column {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__price b {
+    color: #087f12;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #087f12;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #087f12;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-4 .prices-table__left-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-4 .prices-table__center-column {
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #087f12 0, #94fb00 100%);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-bottom: 2.0625em;
+    padding-top: 3.5625em;
+    color: #fff;
+    animation: 1s kote-scale infinite;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-4 .prices-table__center-column {
+        border-radius: 0;
+    }
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__price b {
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #fff;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-4 .prices-table__center-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-4 .prices-table__right-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-4 .prices-table__right-column {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__price b {
+    color: #087f12;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #087f12;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #087f12;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-4 .prices-table__right-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+/*** Preset 4 End ***/
+/*** Preset 5 Begin ***/
+.kote-prices-table-5 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #2f2f2f;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-5 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.kote-prices-table-5 .prices-table__left-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-5 .prices-table__left-column {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__price b {
+    color: #3b7375;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #3b7375;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #3b7375;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-5 .prices-table__left-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-5 .prices-table__center-column {
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #3b7375 0, #00f5fe 100%);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-bottom: 2.0625em;
+    padding-top: 3.5625em;
+    color: #fff;
+    animation: kote-jump 2s linear alternate infinite;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-5 .prices-table__center-column {
+        border-radius: 0;
+    }
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__price b {
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #fff;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-5 .prices-table__center-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-5 .prices-table__right-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-5 .prices-table__right-column {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__price b {
+    color: #3b7375;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #3b7375;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #3b7375;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-5 .prices-table__right-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+/*** Preset 5 End ***/
+/*** Preset 6 Begin ***/
+.kote-prices-table-6 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #2f2f2f;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-6 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.kote-prices-table-6 .prices-table__left-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-6 .prices-table__left-column {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__price b {
+    color: #0f0910;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #0f0910;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #0f0910;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-6 .prices-table__left-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-6 .prices-table__center-column {
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #0f0910 0, #513d68 100%);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-bottom: 2.0625em;
+    padding-top: 3.5625em;
+    color: #fff;
+    box-shadow: 0 0 2em rgba(101, 81, 123, 0);
+    animation: kote-shine 2s infinite;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-6 .prices-table__center-column {
+        border-radius: 0;
+    }
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__price b {
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #fff;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-6 .prices-table__center-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-6 .prices-table__right-column {
+    margin: 2em 0 .5em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-6 .prices-table__right-column {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__price b {
+    color: #0f0910;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #0f0910;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__description {
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: .032em;
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__top-container .prices-table__description ul li {
+    list-style: none;
+    line-height: 1.6em;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #0f0910;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-6 .prices-table__right-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+/*** Preset 6 End ***/
+/*** Preset 7 Begin ***/
+.kote-prices-table-7 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    color: #2f2f2f;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-7 {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.kote-prices-table-7 .prices-table__left-column {
+    margin: 1em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-7 .prices-table__left-column {
+        margin: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fe5c55;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__price b {
+    color: #fe5c55;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #fe5c55;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-7 .prices-table__left-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-7 .prices-table__center-column {
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, #fe5c55 0, #f09719 100%);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding-bottom: 2.5625em;
+    padding-top: 2.5625em;
+    color: #fff;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-7 .prices-table__center-column {
+        border-radius: 0;
+    }
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #fff;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__price b {
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #2f2f2f;
+    background: #fff;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-7 .prices-table__center-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+.kote-prices-table-7 .prices-table__right-column {
+    margin: 1em 0;
+    border-radius: .187em;
+    position: relative;
+    padding: 1.5625em;
+    width: 15.75em;
+    min-width: 15.75em;
+    background: #fff;
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 930px) {
+    .kote-prices-table-7 .prices-table__right-column {
+        margin: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container {
+    position: relative;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__icons-container {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-1 img {
+    width: 6.56em;
+    height: auto;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__icons-container .prices-table__icon-2 img {
+    width: 3.69em;
+    height: auto;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__name {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fe5c55;
+    letter-spacing: .02em;
+    font-size: 1.875em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__name p {
+    margin: 0;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container > hr {
+    border: 0;
+    border-bottom: 0.063em solid #ccc;
+    padding-top: 0em;
+    margin: 1.5625em 0;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__price {
+    text-align: center;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__price b {
+    color: #fe5c55;
+    font-size: 3.125em;
+    font-weight: 600;
+    display: block;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__top-container .prices-table__price span {
+    font-size: .875em;
+    font-weight: 300;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__bottom-container {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__bottom-container .prices-table__button {
+    display: inline-block;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__bottom-container .prices-table__button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    width: 9.375em;
+    text-decoration: none;
+    color: #fff;
+    background: #fe5c55;
+    border-radius: 2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .8125em;
+    font-weight: 400;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.kote-prices-table-7 .prices-table__right-column .prices-table__bottom-container .prices-table__button a:hover {
+    box-shadow: 0 0 0.188em rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+/*** Preset 7 End ***/
+
+/*# sourceMappingURL=kote-template.css.map */
